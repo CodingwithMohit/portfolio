@@ -1,0 +1,33 @@
+# Coding With Mohit
+
+> Mohit Kumar Mishra (Coding With Mohit / CWM) is a full stack developer based in India, specializing in Node.js backend systems, Telegram bot development, REST API integrations, and payment verification systems. Available for freelance and contract work.
+
+Coding With Mohit builds practical, production-ready projects rather than tutorial-only demos — including Telegram bot automation, backend APIs, and payment verification systems, using Node.js, Express, MongoDB, and Telegraf. Currently open for freelance and contract work.
+
+## Services
+
+- [Telegram Bot Development](https://codingwithmohit.in/#MyServices): Custom Telegram bots built with Node.js and Telegraf for automation, user management, payments, referrals, and third-party API integrations.
+- [Payment Verification Systems](https://codingwithmohit.in/#MyServices): Backend systems that verify UPI, gateway, and crypto payments automatically without relying on a full payment gateway.
+- [Website Development](https://codingwithmohit.in/#MyServices): Responsive websites built with modern HTML, CSS, and JavaScript.
+- [Backend & API Integration](https://codingwithmohit.in/#MyServices): Server-side development for databases, authentication, APIs, and business logic.
+- [Database Design & Management](https://codingwithmohit.in/#MyServices): MongoDB database design for real user data, transactions, and application logic.
+- [Automation & Custom Tools](https://codingwithmohit.in/#MyServices): Scripts and tools to automate repetitive tasks and integrate services.
+
+## Projects
+
+- [CWMPay](https://cwmpay.in): Flagship merchant payment verification platform that processed 40,000+ worth of real transactions across 50-60 active merchants. Currently paused for compliance redesign around a licensed payment-partner model. Docs at https://docs.cwmpay.in, status at https://status.cwmpay.in.
+- [BharatPe Payment Checker API](https://bharatpe-payment-checker.vercel.app/): Verifies BharatPe merchant payments via UTR without a gateway.
+- [UPI QR Code Generator API](https://payment-qr-generator-hazel.vercel.app/): Generates fixed-amount UPI QR codes to prevent underpayment/overpayment errors.
+- [Crypto Transaction Verification API](https://crypto-payment-api.vercel.app/): Verifies cryptocurrency transactions on-chain using explorer APIs like BscScan.
+- [Telegram Bot Broadcast & Automation System](https://broadcast-coding-with-mohits-projects.vercel.app/): Sends broadcasts and automates messaging workflows within Telegram's rate limits.
+- [Telegram Channel Membership Verification API](https://verify-membership-coding-with-mohits-projects.vercel.app/verify-membership): Verifies Telegram channel membership before granting access to protected features.
+
+## Contact
+
+- [Get in touch](https://codingwithmohit.in/#ContactMe): Email mohitkumarmishra2005@gmail.com or Telegram @codingwithmohit05. Remote / India.
+
+## Optional
+
+- [Telegram Channel](https://t.me/codingwithmohit05): Tutorials, updates, and community discussion.
+- [YouTube](https://youtube.com/@codingwithmohit05): Video tutorials on Telegram bots and web development.
+- [Instagram](https://instagram.com/codingwithmohit05): Behind-the-scenes project updates.
