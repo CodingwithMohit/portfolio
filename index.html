@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Coding With Mohit (CWM) – Telegram Bot Developer & Full Stack Developer. I build scalable Telegram bots, APIs, websites, and automation solutions using Node.js, MongoDB, and modern web technologies.">
-    <meta name="keywords" content="Coding With Mohit, CWM, Telegram bot developer, telegram bot maker, node js developer, full stack developer india, telegram automation, telegram api, telegram bots javascript, coding with mohit website, REST APIs, node js api">
+    <meta name="description" content="Mohit Mishra builds backend systems, APIs and Telegram bots with Node.js. Based in Patna. Open for freelance and contract work.">
+    <meta name="keywords" content="Coding With Mohit, CWM, Telegram bot developer, node js developer, full stack developer india, telegram automation, REST APIs, payment verification API">
     <meta name="author" content="Mohit Kumar Mishra">
 
-    <!-- Open Graph (for Google, WhatsApp, Telegram, LinkedIn) -->
-    <meta property="og:title" content="Coding With Mohit | Telegram Bot & Full Stack Developer">
-    <meta property="og:description" content="I build Telegram bots, APIs, and full stack applications using Node.js and MongoDB. Explore my projects and services.">
+    <meta property="og:title" content="Coding With Mohit, Full Stack and Telegram Bot Developer">
+    <meta property="og:description" content="Backend systems, APIs and Telegram bots built with Node.js. Open for freelance work.">
     <meta property="og:url" content="https://codingwithmohit.in">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://codingwithmohit.in/images/logo.png">
 
     <link rel="canonical" href="https://codingwithmohit.in/">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Coding With Mohit | Telegram Bot & Full Stack Developer">
-    <meta name="twitter:description" content="I build Telegram bots, APIs, and full stack applications using Node.js and MongoDB. Explore my projects and services.">
+    <meta name="twitter:title" content="Coding With Mohit, Full Stack and Telegram Bot Developer">
+    <meta name="twitter:description" content="Backend systems, APIs and Telegram bots built with Node.js. Open for freelance work.">
     <meta name="twitter:image" content="https://codingwithmohit.in/images/logo.png">
 
     <link rel="shortcut icon" href="./images/favicon-circular.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Coding With Mohit | Full Stack & Telegram Bot Developer (Node.js, MongoDB)</title>
+    <title>Coding With Mohit, Full Stack and Telegram Bot Developer (Node.js)</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2676242887802645" crossorigin="anonymous"></script>
 
-    <!-- Structured Data: helps Google understand this is a person/professional service -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -39,413 +40,338 @@
       "url": "https://codingwithmohit.in",
       "image": "https://codingwithmohit.in/images/logo.png",
       "jobTitle": "Full Stack Developer",
-      "email": "mohitkumarmishra2005@gmail.com",
+      "email": "mishramohitkumar403@gmail.com",
       "sameAs": [
         "https://t.me/codingwithmohit05",
         "https://youtube.com/@codingwithmohit05",
         "https://instagram.com/codingwithmohit05"
       ],
-      "knowsAbout": ["Node.js", "Telegram Bot Development", "REST API Development", "MongoDB", "Payment Verification Systems", "Full Stack Web Development"],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Coding With Mohit"
-      }
+      "knowsAbout": ["Node.js", "Telegram Bot Development", "REST API Development", "MongoDB", "Payment Verification Systems"]
     }
     </script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-container">
-                <div class="logo-container">
-                    <div class="logo-img">
-                        <img src="./images/logo.png" alt="CWM Logo">
-                    </div>
-                    <div class="logo-text">
-                        <h1>Coding with Mohit</h1>
-                        <p>Practical Development & Tutorials</p>
-                    </div>
+        <div class="container header-container">
+            <a href="#top" class="logo-container">
+                <div class="logo-img">
+                    <img src="./images/logo.png" alt="CWM logo">
                 </div>
+                <div class="logo-text">
+                    <span class="logo-name">Coding with Mohit</span>
+                    <span class="logo-tag">Practical development and tutorials</span>
+                </div>
+            </a>
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#social">Social</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
                 </button>
-
-                <nav class="nav-links">
-                    <a href="#AboutMe">About Me</a>
-                    <a href="#MyServices">Services</a>
-                    <a href="#Projects">Projects</a>
-                    <a href="#SocialAccounts">Social</a>
-                    <a href="#ContactMe">Contact</a>
-                    <a id="hireMe" href="#ContactMe">Hire Me</a>
-                </nav>
-            </div>
+                <a id="hireMe" href="#contact">Hire me</a>
+            </nav>
         </div>
     </header>
 
-    <main>
+    <main id="top">
         <div class="container">
 
-            <!-- Availability Banner -->
-            <div class="availability-banner">
-                <span class="availability-dot"></span>
-                <span>Available for freelance projects — Node.js, APIs, Telegram bots, full stack web apps</span>
-                <a href="#ContactMe" class="availability-cta">Get in touch <i class="fas fa-arrow-right"></i></a>
+            <div class="availability-bar reveal">
+                <span class="pulse-dot"></span>
+                <span>Open for freelance work: Node.js, APIs, Telegram bots, full stack apps.</span>
+                <a href="#contact" class="availability-link">Get in touch <i class="fas fa-arrow-right"></i></a>
             </div>
 
-            <!-- About Me Section -->
-            <section class="section" id="AboutMe">
-                <div class="section-header">
-                    <h2>About Me</h2>
+            <section class="hero">
+                <div class="hero-copy reveal">
+                    <h1>Backend systems that still hold up once real people start using them.</h1>
+                    <p class="hero-sub">I'm Mohit, a full stack developer in Saran, Bihar. I build Full Stack Webs, APIs, Telegram bots and payment verification systems with React, Node.js, MongoDB usually because I needed the thing myself before anyone else asked for it.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">See what I've built</a>
+                        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                    </div>
                 </div>
 
-                <!-- <div class="section-content about-content">
-                    <p>I'm <strong>Mohit</strong>, a full stack developer who builds <strong>Telegram bots, APIs, websites, and backend systems</strong> using Node.js, Express, MongoDB, and Telegraf.</p>
+                <div class="status-panel reveal" aria-hidden="true">
+                    <div class="status-head">
+                        <span class="status-dot"></span>
+                        <span>system status</span>
+                    </div>
+                    <div class="status-row">
+                        <span>API uptime</span>
+                        <span class="status-value good">99.9%</span>
+                    </div>
+                    <div class="status-bar"><div class="status-fill" style="width: 99.9%"></div></div>
 
-                    <p>Through <strong>Coding With Mohit (CWM)</strong>, I focus on creating practical tools and real-world projects rather than tutorial-only demos. My work includes <strong>payment verification systems, Telegram bot automation, API integrations, and database-driven backends</strong> designed to be production-ready, not just proof-of-concept.</p>
+                    <div class="status-row">
+                        <span>Webhook delivery</span>
+                        <span class="status-value good">verified</span>
+                    </div>
+                    <div class="status-bar"><div class="status-fill" style="width: 100%"></div></div>
 
-                    <p>I've built and deployed multiple live projects, including a payment platform that processed <strong>12,000+ real transactions across 50-60 active merchants</strong> in its first two weeks — giving me hands-on experience with real user load, not just personal projects. My approach is straightforward: <strong>ship things that work, and know when to pause and fix something before it becomes a bigger problem.</strong></p>
-
-                    <p>Currently open for freelance and contract work — see <a href="#MyServices">what I can help with</a> or jump straight to <a href="#ContactMe">contact details</a>.</p>
-                </div> -->
-
-                <div class="section-content about-content">
-                    <p>I'm <strong>Mohit</strong>, a full stack developer building <strong>Telegram bots, APIs, websites, and backend systems</strong> with Node.js, Express, MongoDB, and Telegraf.</p>
-
-                    <p>Through <strong>Coding With Mohit (CWM)</strong>, I build practical projects and tools that solve real problems. My work includes <strong>Telegram bot automation, payment systems, API integrations, and database-driven backends</strong>.</p>
-
-                    <p>I've built and deployed multiple live projects, including a payment platform that processed <strong>40,000+ worth of real transactions across 50–60 active merchants</strong> within its first two weeks. Working with real users has given me experience beyond just building projects locally — from handling production issues to improving systems based on actual usage.</p>
-
-                    <p>I'm currently open to <strong>freelance and contract work</strong>. Check out <a href="#MyServices">what I can help with</a> or <a href="#ContactMe">get in touch</a>.</p>
+                    <div class="status-row">
+                        <span>Merchants served</span>
+                        <span class="status-value">50 to 60</span>
+                    </div>
+                    <div class="status-row">
+                        <span>Real transactions</span>
+                        <span class="status-value">40,000+</span>
+                    </div>
                 </div>
             </section>
 
-            <!-- Services Section -->
-            <section class="section" id="MyServices">
-                <div class="section-header">
-                    <h2>My Services</h2>
+            <section class="section" id="about">
+                <div class="section-head reveal">
+                    <h2>About</h2>
+                </div>
+                <div class="about-body reveal">
+                    <p>I build Full Stack Webs, backend systems, APIs and Telegram bots, mostly with Node.js, Express and MongoDB.</p>
+                    <p>Most of what's here started as something I needed myself: a way to verify payments without paying for a gateway contract, a bot that could message thousands of users without tripping Telegram's rate limits, an API that could check a crypto transaction without me opening a block explorer by hand each time.</p>
+                    <p>The project people ask about most is <a href="#projects">CWMPay</a>, a payment verification platform I ran for about two weeks. It grew to 50 to 60 active merchants and processed more than ₹40,000 in real transactions, entirely by word of mouth. I paused it once I found a regulatory gap in how the money moved, and didn't think it was right to keep scaling before fixing that.</p>
+                    <p>I'm currently open for freelance and contract work. Here's what I can help with, or you can just <a href="#contact">get in touch</a>.</p>
+                </div>
+            </section>
+
+            <section class="section" id="services">
+                <div class="section-head reveal">
+                    <h2>Services</h2>
                 </div>
 
                 <div class="services-grid">
-                    <div class="service-card">
-                        <h3><i class="fas fa-robot"></i> Telegram Bot Development</h3>
-                        <p>Custom Telegram bots built using Node.js and Telegraf, designed for real-world use cases such as automation, user management, payments, referrals, and integrations with third-party APIs.</p>
-                        <a href="#proj-telegram-broadcast" class="service-proof">See it in action <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card reveal">
+                        <i class="fas fa-robot service-icon"></i>
+                        <h3>Telegram bot development</h3>
+                        <p>Bots built with Node.js and Telegraf that do more than reply to commands: automation, referral systems, payments, and hooks into other APIs when you need them.</p>
+                        <a href="#proj-telegram-broadcast" class="service-link">See it in action</a>
                     </div>
 
-                    <div class="service-card">
-                        <h3><i class="fas fa-money-check-alt"></i> Payment Verification Systems</h3>
-                        <p>Backend systems that verify UPI, gateway, and crypto payments automatically — checking transaction status, amount, and reference before granting access or confirming an order, without relying on a full payment gateway.</p>
-                        <a href="#proj-cwmpay" class="service-proof">See it in action <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card alt reveal">
+                        <i class="fas fa-money-check-alt service-icon"></i>
+                        <h3>Payment verification systems</h3>
+                        <p>Backend logic that checks UPI, gateway or crypto payments automatically and confirms an order, without you needing a full payment gateway contract.</p>
+                        <a href="#proj-cwmpay" class="service-link">See it in action</a>
                     </div>
 
-                    <div class="service-card">
-                        <h3><i class="fas fa-laptop-code"></i> Website Development</h3>
-                        <p>Clean, responsive websites built with modern HTML, CSS, and JavaScript. Focused on performance, clarity, and practical design rather than unnecessary visual clutter.</p>
-                        <a href="#proj-personal-site" class="service-proof">See it in action <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card reveal">
+                        <i class="fas fa-laptop-code service-icon"></i>
+                        <h3>Website development</h3>
+                        <p>Plain HTML, CSS and JavaScript sites that load fast and don't try too hard. Responsive by default.</p>
+                        <a href="#proj-personal-site" class="service-link">See it in action</a>
                     </div>
 
-                    <div class="service-card">
-                        <h3><i class="fas fa-server"></i> Backend & API Integration</h3>
-                        <p>Server-side development for handling databases, authentication, APIs, and business logic. I build systems that are reliable, scalable, and easy to extend.</p>
-                        <a href="#proj-bharatpe" class="service-proof">See it in action <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card alt reveal">
+                        <i class="fas fa-server service-icon"></i>
+                        <h3>Backend and API integration</h3>
+                        <p>Server-side work: databases, auth, third-party APIs, business logic. Code that's still easy to read a year later.</p>
+                        <a href="#proj-bharatpe" class="service-link">See it in action</a>
                     </div>
 
-                    <div class="service-card">
-                        <h3><i class="fas fa-database"></i> Database Design & Management</h3>
-                        <p>Designing and managing databases using MongoDB and related tools to handle real user data, transactions, and application logic efficiently.</p>
-                        <a href="#proj-cwmpay" class="service-proof">See it in action <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card reveal">
+                        <i class="fas fa-database service-icon"></i>
+                        <h3>Database design</h3>
+                        <p>MongoDB schemas built around how your data actually gets used, not just how it looks on day one.</p>
+                        <a href="#proj-cwmpay" class="service-link">See it in action</a>
                     </div>
 
-                    <div class="service-card">
-                        <h3><i class="fas fa-cogs"></i> Automation & Custom Tools</h3>
-                        <p>Custom scripts and tools to automate repetitive tasks, integrate services, and improve workflow efficiency for individuals and small teams.</p>
-                        <a href="#proj-membership" class="service-proof">See it in action <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card alt reveal">
+                        <i class="fas fa-cogs service-icon"></i>
+                        <h3>Automation and custom tools</h3>
+                        <p>Scripts that take a repetitive task off your plate. If you're doing something by hand every week, it's usually fixable.</p>
+                        <a href="#proj-membership" class="service-link">See it in action</a>
                     </div>
                 </div>
             </section>
 
-            <!-- Projects Section -->
-            <section class="section" id="Projects">
-                <div class="section-header">
+            <section class="section" id="projects">
+                <div class="section-head reveal">
                     <h2>Projects</h2>
                 </div>
 
+                <div class="flagship-card reveal" id="proj-cwmpay">
+                    <div class="flagship-ribbon">flagship</div>
+                    <h3>CWMPay, merchant payment verification platform</h3>
+                    <p>Built a payment verification platform for small merchants in under two weeks. Included an API layer, a merchant dashboard, and a webhook system for real-time payment confirmation. Once it scaled, I found a regulatory gap in the fund-flow architecture and paused new merchant onboarding to redesign it around a licensed payment-partner model instead of continuing to scale a flawed structure.</p>
+
+                    <div class="tag-row">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Webhooks</span>
+                    </div>
+
+                    <p class="use-case"><strong>Use case:</strong> real-time merchant payment verification, tested with real users and real transaction volume.</p>
+
+                    <div class="link-row">
+                        <a href="https://cwmpay.in" target="_blank" class="btn btn-small">Live site</a>
+                        <a href="https://docs.cwmpay.in" target="_blank" class="btn btn-small btn-outline">API docs</a>
+                        <a href="https://status.cwmpay.in" target="_blank" class="btn btn-small btn-outline">Status page</a>
+                    </div>
+                </div>
+
                 <div class="projects-grid">
-
-                    <div class="project-card featured" id="proj-cwmpay">
-                        <span class="featured-tag">Flagship Project</span>
-                        <h3>CWMPay — Merchant Payment Verification Platform</h3>
-                        <p>Built a payment verification platform for small merchants in under two weeks, processing <strong>40,000+ worth of real transactions across 50-60 active merchants</strong>. Included an API layer, merchant dashboard, and webhook system for real-time payment confirmation. After scaling, I identified a regulatory gap in the fund-flow architecture and proactively paused onboarding to redesign it around a compliant, licensed payment-partner model rather than continuing to scale a flawed structure.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">ReactJS</span>
-                            <span class="tech-tag">Tailwind</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">REST API</span>
-                            <span class="tech-tag">Webhooks</span>
+                    <div class="project-card reveal" id="proj-bharatpe">
+                        <span class="project-kind">api</span>
+                        <h3>BharatPe payment checker API</h3>
+                        <p>Verifies payments using a UTR from a BharatPe merchant account, without needing a payment gateway. Returns amount, reference number, date and time.</p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
                         </div>
+                        <a href="https://bharatpe-payment-checker.vercel.app/" target="_blank" class="btn btn-small">Live demo</a>
+                    </div>
 
-                        <p><strong>Use case:</strong> Real-time merchant payment verification and dashboard, built and battle-tested with real users and real transaction volume.</p>
+                    <div class="project-card reveal">
+                        <span class="project-kind">api</span>
+                        <h3>UPI QR code generator</h3>
+                        <p>Generates fixed-amount UPI QR codes so users can't accidentally send the wrong amount, which usually means a refund and a manual headache.</p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                        </div>
+                        <a href="https://payment-qr-generator-hazel.vercel.app/" target="_blank" class="btn btn-small">Live demo</a>
+                    </div>
 
-                        <div class="project-links">
-                            <a href="https://cwmpay.in" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Site
-                            </a>
-                            <a href="https://docs.cwmpay.in" target="_blank">
-                                <i class="fas fa-book"></i> API Docs
-                            </a>
-                            <a href="https://status.cwmpay.in" target="_blank">
-                                <i class="fas fa-signal"></i> Status Page
-                            </a>
+                    <div class="project-card reveal">
+                        <span class="project-kind">api</span>
+                        <h3>Crypto transaction verification API</h3>
+                        <p>Checks wallet address, amount and transaction status directly on-chain using explorer APIs like BscScan, before a feature gets unlocked or a deposit confirmed.</p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">BscScan API</span>
+                        </div>
+                        <a href="https://crypto-payment-api-coding-with-mohits-projects.vercel.app/api/check-payment" target="_blank" class="btn btn-small">Live demo</a>
+                    </div>
+
+                    <div class="project-card reveal" id="proj-telegram-broadcast">
+                        <span class="project-kind">bot</span>
+                        <h3>Telegram broadcast and automation system</h3>
+                        <p>Sends broadcasts and automates messaging workflows for large user bases without getting throttled by Telegram's rate limits.</p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="https://broadcast-coding-with-mohits-projects.vercel.app/" target="_blank" class="btn btn-small">Live demo</a>
+                    </div>
+
+                    <div class="project-card reveal" id="proj-membership">
+                        <span class="project-kind">bot</span>
+                        <h3>Channel membership verification API</h3>
+                        <p>Checks whether a user is a member of a Telegram channel before granting access to a protected feature or paid community.</p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="https://verify-membership-coding-with-mohits-projects.vercel.app/verify-membership" target="_blank" class="btn btn-small">Live demo</a>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <span class="project-kind">bot</span>
+                        <h3>Custom bots for real use cases</h3>
+                        <p>Referrals, user registration, balance tracking, withdrawals, and API integrations, built for specific communities rather than as generic templates.</p>
+                        <div class="tag-row">
+                            <span class="tag">Telegraf</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="link-row">
+                            <a href="https://t.me/ReferEarnCWMBot?start=user16318168" target="_blank" class="btn btn-small btn-outline">Refer and earn</a>
+                            <a href="https://t.me/TruecallerByMohitBot?start=start" target="_blank" class="btn btn-small btn-outline">Truecaller bot</a>
                         </div>
                     </div>
 
-                    <div class="project-card" id="proj-bharatpe">
-                        <h3>BharatPe Payment Checker API</h3>
-                        <p>API to simplify payment verification without a gateway. This API allows you to verify payments using UTR from a BharatPe merchant account. Check if a transaction exists and returns amount, reference number, date & time.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">REST API</span>
+                    <div class="project-card reveal" id="proj-personal-site">
+                        <span class="project-kind">web</span>
+                        <h3>This site</h3>
+                        <p>A performance-focused personal site built to show what I've made, without a page builder or a template in sight.</p>
+                        <div class="tag-row">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
                         </div>
-
-                        <p><strong>Use case:</strong> Verify BharatPe payments without a gateway</p>
-
-                        <div class="project-links">
-                            <a href="https://bharatpe-payment-checker.vercel.app/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Generate FIXED Amount UPI QR Code API</h3>
-                        <p>In bots and early-stage systems, users often send the wrong amount → refunds + manual hassle. This API generates (returns) fixed-amount UPI QR codes with: UPI ID, Name, Exact amount, Transaction ID.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-
-                        <p><strong>Use case:</strong> Generate fixed amount UPI QR codes for seamless transactions</p>
-
-                        <div class="project-links">
-                            <a href="https://payment-qr-generator-hazel.vercel.app/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Crypto Transaction Verification API</h3>
-                        <p>A REST-based backend API that verifies cryptocurrency transactions by checking wallet address, transferred amount, and transaction status directly on the blockchain using explorer APIs like BscScan. Built for applications that require automatic crypto payment verification before enabling features, activating services, or confirming deposits.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">BSCSCAN API</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-
-                        <p><strong>Use case:</strong> Crypto payment verification, automated access control, transaction validation</p>
-
-                        <div class="project-links">
-                            <a href="https://crypto-payment-api.vercel.app/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card" id="proj-telegram-broadcast">
-                        <h3>Telegram Bot Broadcast & Automation System</h3>
-                        <p>A Telegram bot system designed to send broadcasts, manage users, and automate messaging workflows efficiently without violating Telegram limits.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Telegram Bot API</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-
-                        <p><strong>Use case:</strong> Community management, announcements, automation</p>
-
-                        <div class="project-links">
-                            <a href="https://broadcast-coding-with-mohits-projects.vercel.app/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card" id="proj-membership">
-                        <h3>Telegram Channel Membership Verification API</h3>
-                        <p>A backend system that verifies whether a user is a member of a Telegram channel before granting access to protected features. Built for scalability and real-world usage.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Telegram Bot API</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-
-                        <p><strong>Use case:</strong> Access control, paid communities, member verification</p>
-
-                        <div class="project-links">
-                            <a href="https://verify-membership-coding-with-mohits-projects.vercel.app/verify-membership" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Custom Telegram Bots for Real Use Cases</h3>
-                        <p>Multiple custom bots built for tasks like referrals, user registration, balance systems, withdrawals, and API-based integrations.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Telegraf</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">External APIs</span>
-                        </div>
-
-                        <p><strong>Use case:</strong> Automation, payments, user management</p>
-
-                        <div class="project-links">
-                            <a href="https://t.me/ReferEarnCWMBot?start=user16318168" target="_blank">
-                                <i class="fab fa-telegram"></i> Refer & Earn Bot
-                            </a>
-                            <a href="https://t.me/TruecallerByMohitBot?start=start" target="_blank">
-                                <i class="fab fa-telegram"></i> Truecaller Bot
-                            </a>
-                            <a href="https://t.me/CWMSocialMediaGrowthBot?start=user16318168" target="_blank">
-                                <i class="fab fa-telegram"></i> Social Media Services Bot
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card" id="proj-personal-site">
-                        <h3>Personal Brand Website (Coding With Mohit)</h3>
-                        <p>A clean, performance-focused personal brand website built to showcase projects, services, and learning resources around Telegram bot and web development.</p>
-
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive Design</span>
-                        </div>
-
-                        <p><strong>Use case:</strong> Personal branding, portfolio, content hub</p>
-
-                        <div class="project-links">
-                            <a href="#AboutMe">
-                                <i class="fas fa-info-circle"></i> View Details
-                            </a>
-                        </div>
+                        <a href="#about" class="btn btn-small btn-outline">Read more</a>
                     </div>
                 </div>
             </section>
 
-            <!-- Social Accounts Section -->
-            <section class="section" id="SocialAccounts">
-                <div class="section-header">
-                    <h2>Social Accounts</h2>
+            <section class="section" id="social">
+                <div class="section-head reveal">
+                    <h2>Social</h2>
                 </div>
-
-                <div class="section-content">
-                    <p>I actively share my work, tutorials, and updates across the following platforms. Each one serves a specific purpose.</p>
-
-                    <div class="social-cards">
-                        <div class="social-card">
-                            <div class="social-icon telegram">
-                                <i class="fab fa-telegram"></i>
-                            </div>
-                            <div class="social-content">
-                                <h3>Telegram</h3>
-                                <p>Primary platform for sharing coding tutorials, Telegram bot development insights, updates, and community discussions.</p>
-                                <a href="https://t.me/codingwithmohit05/4" target="_blank" class="social-link">
-                                    Join the Channel <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
+                <div class="social-list reveal">
+                    <a href="https://t.me/codingwithmohit05" target="_blank" class="social-row">
+                        <i class="fab fa-telegram social-icon telegram"></i>
+                        <div>
+                            <h3>Telegram</h3>
+                            <p>Tutorials, build updates and community discussion.</p>
                         </div>
-
-                        <div class="social-card">
-                            <div class="social-icon youtube">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                            <div class="social-content">
-                                <h3>YouTube</h3>
-                                <p>Video tutorials and practical demonstrations covering Telegram bots, web development, and backend concepts.</p>
-                                <a href="https://youtube.com/@codingwithmohit05" target="_blank" class="social-link">
-                                    Watch on YouTube <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://youtube.com/@codingwithmohit05" target="_blank" class="social-row">
+                        <i class="fab fa-youtube social-icon youtube"></i>
+                        <div>
+                            <h3>YouTube</h3>
+                            <p>Video walkthroughs on Telegram bots and backend development, in Hindi.</p>
                         </div>
-
-                        <div class="social-card">
-                            <div class="social-icon instagram">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                            <div class="social-content">
-                                <h3>Instagram</h3>
-                                <p>Behind-the-scenes content, project updates, and quick tips related to Telegram bots and web development.</p>
-                                <a href="https://instagram.com/codingwithmohit05" target="_blank" class="social-link">
-                                    Follow on Instagram <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://instagram.com/codingwithmohit05" target="_blank" class="social-row">
+                        <i class="fab fa-instagram social-icon instagram"></i>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>Behind the scenes on whatever I'm building that week.</p>
                         </div>
-                    </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </section>
 
-            <!-- Contact Section -->
-            <section class="section" id="ContactMe">
-                <div class="section-header">
-                    <h2>Contact Me</h2>
+            <section class="section" id="contact">
+                <div class="section-head reveal">
+                    <h2>Contact</h2>
                 </div>
 
-                <div class="section-content">
-                    <div class="contact-container">
-                        <div class="contact-info">
-                            <h3>Get in Touch</h3>
-                            <p>Have a project in mind? I'm currently taking on freelance work for Telegram bots, backend/API development, payment verification systems, and full stack web apps. Reach out with what you need built.</p>
+                <div class="contact-grid reveal">
+                    <div class="contact-info">
+                        <h3>Get in touch</h3>
+                        <p>Have a project in mind? I'm currently taking on freelance work for Full Stack Webs, Telegram bots, backend and API development, payment verification systems, and full stack apps.</p>
 
-                            <div class="contact-details">
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <div>
-                                        <h4>Email</h4>
-                                        <p><a href="mailto:mohitkumarmishra2005@gmail.com">mohitkumarmishra2005@gmail.com</a></p>
-                                    </div>
-                                </div>
-
-                                <div class="contact-item">
-                                    <i class="fab fa-telegram"></i>
-                                    <div>
-                                        <h4>Telegram</h4>
-                                        <p><a href="https://t.me/codingwithmohit05" target="_blank">@codingwithmohit05</a></p>
-                                    </div>
-                                </div>
-
-                                <div class="contact-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div>
-                                        <h4>Location</h4>
-                                        <p>Remote / India</p>
-                                    </div>
-                                </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:mishramohitkumar403@gmail.com">mishramohitkumar403@gmail.com</a>
                             </div>
                         </div>
-
-                        <div class="contact-cta-box">
-                            <h4>Ready to start a project?</h4>
-                            <p>Email or message me on Telegram with a short description of what you need — I typically reply within a day.</p>
-                            <a href="mailto:mohitkumarmishra2005@gmail.com?subject=Project%20Inquiry" class="submit-btn-link">
-                                <i class="fas fa-paper-plane"></i> Email Me Directly
-                            </a>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <span class="contact-label">Telegram</span>
+                                <a href="https://t.me/codingwithmohit05" target="_blank">@codingwithmohit05</a>
+                            </div>
                         </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>Saran, Bihar, India. Remote work welcome.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3>Ready to start?</h3>
+                        <p>Email me or message me on Telegram with a short description of what you need. I usually reply within a day.</p>
+                        <a href="mailto:mishramohitkumar403@gmail.com?subject=Project%20inquiry" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Email me directly
+                        </a>
                     </div>
                 </div>
             </section>
@@ -453,51 +379,38 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="logo-img">
-                        <img src="./images/logo.png" alt="CWM Logo">
-                    </div>
-                    <div class="footer-text">
-                        <h3>Coding with Mohit</h3>
-                        <p>Practical Development & Tutorials</p>
-                    </div>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo-img">
+                    <img src="./images/logo.png" alt="CWM logo">
                 </div>
-
-                <div class="footer-links">
-                    <div class="footer-nav">
-                        <h4>Quick Links</h4>
-                        <a href="#AboutMe">About</a>
-                        <a href="#MyServices">Services</a>
-                        <a href="#Projects">Projects</a>
-                        <a href="#ContactMe">Contact</a>
-                    </div>
-
-                    <div class="footer-social">
-                        <h4>Follow Me</h4>
-                        <div class="social-icons">
-                            <a href="https://t.me/codingwithmohit05" target="_blank" aria-label="Telegram">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                            <a href="https://youtube.com/@codingwithmohit05" target="_blank" aria-label="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="#" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" aria-label="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div>
+                    <h4>Coding with Mohit</h4>
+                    <p>Practical development and tutorials</p>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Coding with Mohit. All rights reserved.</p>
-                <p>Made with <i class="fas fa-heart"></i> by Mohit</p>
+            <div class="footer-links">
+                <div>
+                    <h5>Site</h5>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div>
+                    <h5>Follow</h5>
+                    <div class="footer-icons">
+                        <a href="https://t.me/codingwithmohit05" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://youtube.com/@codingwithmohit05" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/codingwithmohit" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Coding with Mohit</p>
+            <p>Built by hand in Saran</p>
         </div>
     </footer>
 
