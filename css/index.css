@@ -450,6 +450,65 @@ header {
     border-color: var(--wire);
 }
 
+/* Pricing */
+.section-note {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+.pricing-group {
+    margin-bottom: 32px;
+}
+
+.pricing-group-title {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.price-card {
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price-card.featured {
+    border-color: var(--accent);
+}
+
+.price-tier {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.price-amount {
+    font-family: var(--font-mono);
+    font-size: 1.15rem;
+    color: var(--accent-ink);
+}
+
+.price-card p {
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+    margin: 0;
+}
+
 /* Flagship project */
 .flagship-card {
     position: relative;
@@ -804,6 +863,10 @@ a:focus-visible, button:focus-visible {
 
     .services-grid, .projects-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
     }
 
     .contact-grid {
